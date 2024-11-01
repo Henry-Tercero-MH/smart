@@ -12,7 +12,7 @@ import {
 interface Device {
   id: number;
   name: string;
-  type: "light" | "thermostat" | "lock" | "switch" | "camera";
+  type: "Light" | "Climatizacion" | "lock" | "switch" | "camera";
   status: boolean;
   pin: string;
 }
@@ -26,15 +26,15 @@ const Dashboard: React.FC<DashboardProps> = ({ darkMode, toggleDarkMode }) => {
   const [devices, setDevices] = useState<Device[]>([
     {
       id: 1,
-      name: "Living Room Light",
-      type: "light",
+      name: "Ventilador",
+      type: "Climatizacion",
       status: false,
       pin: "V1",
     },
     {
       id: 2,
-      name: "Bedroom Focus",
-      type: "thermostat",
+      name: "Foco Sala",
+      type: "Light",
       status: false,
       pin: "V2",
     },
