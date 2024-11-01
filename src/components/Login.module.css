@@ -1,0 +1,6 @@
+.background {
+  background-image: url("./foto.png"); /* Asegúrate de que la ruta sea correcta */
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
